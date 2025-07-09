@@ -2,7 +2,7 @@
 
 ## Contacts
 
-<img src="photo-blur-cut.jpg" height=128 style="border-radius:16px; float:right;">
+<img src="img/content/photo-blur-cut.jpg" height=128 style="border-radius:16px; float:right;">
 
 **Phone:** +375 (44) 74-64-364\
 **Email:** artbelski@gmail.com\
@@ -57,11 +57,11 @@ function countSmileys(arr) {
 
 ## Job Experience
 
-<img src="belstu.png" height=12> **Web Developer**\
+<img src="img/content/belstu.png" height=12> **Web Developer**\
 *Belarusian State Technological University*\
 <sup>Aug 2022 - July 2024 - 2 years, Minsk</sup>
 
-<img src="dzd.png" height=12> **Information Technology Instructor**\
+<img src="img/content/dzd.png" height=12> **Information Technology Instructor**\
 *Children's Railway*\
 <sup>Feb 2024 - Now, Minsk</sup>
 
@@ -72,19 +72,19 @@ Web Application built with React.js, Golang, and PostgreSQL. The goal of the pro
 
 ## Education
 
-<img src="belstu.png" height=12> **Bachelor’s degree in Information Systems
+<img src="img/content/belstu.png" height=12> **Bachelor’s degree in Information Systems
 and Technologies**\
 *Belarusian State Technological University*\
 <sup>2018 - 2022, Minsk</sup>
 
 ## Courses
 
-<img src="rs-school.png" height=12> **Learning the basics of Golang and
+<img src="img/content/rs-school.png" height=12> **Learning the basics of Golang and
 participating in team project development**\
 *Rolling Scopes School (EPAM)*\
 <sup>2022, Minsk</sup>
 
-<img src="ulc.png" height=12> **Learning English - B1**\
+<img src="img/content/ulc.png" height=12> **Learning English - B1**\
 *Underground Language Club*\
 <sup>2023, Minsk</sup>
 
