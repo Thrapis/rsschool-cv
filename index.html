@@ -1,11 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Artsiom Belski CV</title>
 </head>
+
 <body>
+
+    <header>
+        <div>
+            <img src="img/content/photo-blur-cut.jpg" height="48" alt="Image of Artsiom Belski">
+            <span>Artsiom Belski</span>
+        </div>
+    </header>
+
+    <main>
+        <h3>Contacts</h3>
+        <div>
+            <div>
+                <span>Phone:</span>
+                <a href="tel:+375447464364">+375 (44) 74-64-364</a>
+            </div>
+            <div>
+                <span>Email:</span>
+                <a href="mailto:artbelski@gmail.com">artbelski@gmail.com</a>
+            </div>
+            <div>
+                <span>GitHub:</span>
+                <a href="https://github.com/Thrapis">Thrapis</a>
+            </div>
+            <div>
+                <span>LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/artbelski">artbelski</a>
+            </div>
+            <div>
+                <span>Discord:</span>
+                <span>@Thrapis - Artsiom Belski (@Thrapis)</span>
+            </div>
+            <div>
+                <span>Location:</span>
+                <span>Minsk, Belarus</span>
+            </div>
+        </div>
+
+        <h3>About Me</h3>
+        <div>
+            <p>
+                4 years of experience in developing web and desktop applications with C#. Practical experience with SQL
+                Databases: Oracle, Microsoft SQL Server, and Postgres. Successfully obtained Golang United School
+                Certificate
+                (EPAM/RS School) and continue enriching my Golang skill. Have a knowledge of OOP and widely used design
+                patterns.
+            </p>
+            <p>
+                Eager to solve real business problems and thus increase the value of a
+                product. Motivated to learn from others and strive to be a good team
+                member. Detail-oriented and dedicated to delivering high-quality work.
+            </p>
+        </div>
+
+        <h3>Skills</h3>
+        <div>
+            <ul>
+                <li>HTML&amp;CSS</li>
+                <li>JavaScript\TypeScript [Basic]</li>
+                <li>C# (Entity Framework, Dapper, ASP.NET Core, Blazor)</li>
+                <li>Java [Basic]</li>
+                <li>C++ [Basic]</li>
+                <li>Golang (Gorm, Gin)</li>
+                <li>Databases (Oracle, MSSQL, PostgreSQL, Redis [Basic])</li>
+                <li>Git\GitHub (GitHub Actions)</li>
+                <li>Docker [Basic]</li>
+            </ul>
+        </div>
+
+        <h3>Code Example</h3>
+        <div>
+            <div>
+                <p>
+                    Given an array (arr) as an argument complete the function countSmileys that should return the total
+                    number of smiling faces.
+                </p>
+                <p>
+                    Rules for a smiling face:
+                </p>
+                <ul>
+                    <li>
+                        Each smiley face must contain a valid pair of eyes. Eyes can be marked as : or ;
+                    </li>
+                    <li>
+                        A smiley face can have a nose but it does not have to. Valid characters for a nose are - or ~
+                    </li>
+                    <li>
+                        Every smiling face must have a smiling mouth that should be marked with either ) or D
+                    </li>
+                </ul>
+                <p>
+                    No additional characters are allowed except for those mentioned.
+                </p>
+            </div>
+
+            <pre>
+                <code>
+// return the total number of smiling faces in the array
+function countSmileys(arr) {
+var eyes = [&apos;:&apos;, &apos;;&apos;]
+var noses = [&apos;-&apos;, &apos;~&apos;]
+var mouth = [&apos;)&apos;, &apos;D&apos;]
+return arr.filter(s =&gt; (s.length === 2 || s.length === 3) &amp;&amp;
+                    eyes.some(t =&gt; t === s[0]) &amp;&amp; mouth.some(t =&gt; t === s.slice(-1)) &amp;&amp;
+                (s.length === 3 ? noses.some(t =&gt; t === s[1]) : true)).length
+}
+                </code>
+            </pre>
+        </div>
+
+        <h3>Job Experience</h3>
+        <div>
+            <p>
+                <img src="img/content/belstu.png" height="12" alt="BelSTU icon">
+                <b>Web Developer</b>
+                <br>
+                <i>Belarusian State Technological University</i>
+                <br>
+                <sup>Aug 2022 - July 2024 - 2 years, Minsk</sup>
+            </p>
+
+            <p>
+                <img src="img/content/dzd.png" height="12" alt="BelDZD icon">
+                <b>Information Technology Instructor</b>
+                <br>
+                <i>Children's Railway</i>
+                <br>
+                <sup>Feb 2024 - Now, Minsk</sup>
+            </p>
+        </div>
+
+        <h3>Educational Projects</h3>
+        <div>
+            <p>
+                <b>Miadok Chaladok (<a href="https://github.com/Thrapis/MiadokChaladok-Go">link</a>)</b>
+                <br>
+                <span>
+                    Web Application built with React.js, Golang, and PostgreSQL. The goal of the project is to gain
+                    knowledge in React (using Typescript, architecture based on Feature-Sliced Design), Golang libraries
+                    (Gin, Gorm),
+                    Redis storage, Postgres database and Docker.
+                </span>
+            </p>
+        </div>
+
+        <h3>Education</h3>
+        <div>
+            <p>
+                <img src="img/content/belstu.png" height="12" alt="BelSTU icon">
+                <b>Bachelor’s degree in Information Systems and Technologies</b>
+                <br>
+                <i>Belarusian State Technological University</i>
+                <br>
+                <sup>2018 - 2022, Minsk</sup>
+            </p>
+        </div>
+
+        <h3>Courses</h3>
+        <div>
+            <p>
+                <img src="img/content/rs-school.png" height="12" alt="RS-School icon">
+                <b>Learning the basics of Golang and participating in team project development</b>
+                <br>
+                <i>Rolling Scopes School (EPAM)</i>
+                <br>
+                <sup>2022, Minsk</sup>
+            </p>
+
+            <p>
+                <img src="img/content/ulc.png" height="12" alt="Underground Language Club icon">
+                <b>Learning English - B1</b>
+                <br>
+                <i>Underground Language Club</i>
+                <br>
+                <sup>2023, Minsk</sup>
+            </p>
+        </div>
+
+        <h3>Languages</h3>
+        <div>
+            <ul>
+                <li>Russian - Native</li>
+                <li>Belarusian - Native</li>
+                <li>English - B1</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <span>&copy; 2022 by Artsiom Belski</span>
+
+        <a href="https://rs.school/courses/javascript-ru">
+            <img src="img/content/rs-school-logo.svg" alt="RS-School logo">
+        </a>
+
+        <a href="">
+            <i class="fa-brands fa-github"></i>
+            <span>Thrapis</span>
+        </a>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/09b7514ac6.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
