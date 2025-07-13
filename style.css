@@ -35,6 +35,7 @@ html {
     --color-text-light: #ffffff;
 
     --border-radius-input: 24px;
+    --border-radius-input-mini: 8px;
     --border-radius-box: 16px;
 
     scroll-behavior: smooth;
@@ -54,8 +55,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 16px;
+    align-items: start;
+    gap: 8px 16px;
 
     border-radius: var(--border-radius-box);
     box-shadow: inset 2.4px 2.4px 4.8px var(--color-default-dark),
@@ -161,6 +162,7 @@ footer {
     padding: 4px 12px;
     height: 16px;
     font-size: 12px;
+    border-radius: var(--border-radius-input-mini);
 }
 
 .btn.mini {
@@ -193,7 +195,6 @@ footer {
 ::-webkit-scrollbar {
     width: 18px;
     height: 18px;
-    /* background: var(--color-default); */
 }
 
 body::-webkit-scrollbar {
@@ -361,8 +362,8 @@ li::before {
 
 .cv-image-box {
     position: relative;
-    height: 128px;
-    width: 128px;
+    height: 110px;
+    width: 110px;
     padding: 16px;
     border-radius: 50%;
     background: linear-gradient(145deg, var(--color-default-concave-light), var(--color-default-concave-dark));
@@ -379,8 +380,8 @@ li::before {
     top: 4px;
     left: 4px;
 
-    height: 152px;
-    width: 152px;
+    height: 134px;
+    width: 134px;
     border-radius: 50%;
     background: linear-gradient(145deg, var(--color-default-concave-dark), var(--color-default-concave-light));
 }
@@ -405,7 +406,7 @@ li::before {
     margin: 0;
     width: 100%;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     font-size: 24px;
     text-transform: uppercase;
 }
@@ -588,6 +589,7 @@ code {
 @media screen and (width < 560px) {
     header {
         flex-direction: column;
+        align-items: center;
     }
 
     main {
@@ -601,6 +603,10 @@ code {
     .block-header>i {
         font-size: 16px;
         height: 36px;
+    }
+
+    .cv-name {
+        text-align: center;
     }
 
     .contact-row {
